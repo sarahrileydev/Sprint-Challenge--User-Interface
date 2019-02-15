@@ -250,3 +250,34 @@ footer nav a {
 .grow { transition: all .2s ease-in-out; }
 
 .grow:hover { transform: scale(1.1); }
+
+
+@keyframes pulse {
+    20% {
+      -webkit-transform: scale(1.4);
+      transform: scale(1.4);
+    }
+    80% {
+      -webkit-transform: scale(0.6);
+      transform: scale(0.6);
+    }
+}
+  
+.pulse {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+  
+.pulse:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-backface-visibility: hidden;
+
+}
