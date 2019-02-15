@@ -71,11 +71,33 @@ p {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+header nav {
+	width: 65%;
+}
+
+header nav a {
+	text-decoration: none;
+	padding: 10px 50px 10px 0;
+    color: black;
+}
+
+.logo {
+    width: 25%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
+    margin-top: 20px;
     border-bottom: 1px dashed black;
 }
 
@@ -104,13 +126,53 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+#box1 {
+    background: teal; 
+}
+
+#box2 {
+    background: gold; 
+}
+
+#box3 {
+    background: cadetblue; 
+}
+
+#box4 {
+    background: coral; 
+}
+
+#box5 {
+    background: crimson; 
+}
+
+#box6 {
+    background: forestgreen; 
+}
+
+#box7 {
+    background: darkorchid; 
+}
+
+#box8 {
+    background: hotpink; 
+}
+
+#box9 {
+    background: indigo; 
+}
+
+#box10 {
+    background: dodgerblue; 
+}
+
 
 .bottom-content {
     display: flex;
@@ -143,4 +205,83 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* ABOUT PAGE */
+
+.text-container-about {
+    padding: 0 0 20px 20px;
+}
+
+.middle-content-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box-container {
+    width: 46%;
+    border-bottom: 1px dashed gray;
+    padding: 30px 0;
+    margin-bottom: 20px;
+}
+
+.box-container h2 {
+    padding-top: 12px;
+}
+
+.box-container p {
+    padding-bottom: 20px;
+}
+
+.box-container button {
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: white;
+    padding: 7px 30px;
+}
+
+.bottom-content-about {
+    padding: 20px 0 30px 20px;
+}
+
+/* ANIMATION */
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+    transform: scale(1.25); 
+}
+
+
+@keyframes pulse {
+    20% {
+      -webkit-transform: scale(1.4);
+      transform: scale(1.4);
+    }
+    80% {
+      -webkit-transform: scale(0.6);
+      transform: scale(0.6);
+    }
+}
+  
+.pulse {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+  
+.pulse:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-backface-visibility: hidden;
+
 }
