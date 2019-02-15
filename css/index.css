@@ -249,7 +249,7 @@ footer nav a {
 
 .grow { transition: all .2s ease-in-out; }
 
-.grow:hover { transform: scale(1.1); }
+.grow:hover { transform: scale(1.25); }
 
 
 @keyframes pulse {
