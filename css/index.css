@@ -247,9 +247,13 @@ footer nav a {
 
 /* ANIMATION */
 
-.grow { transition: all .2s ease-in-out; }
+.grow { 
+    transition: all .2s ease-in-out; 
+}
 
-.grow:hover { transform: scale(1.25); }
+.grow:hover { 
+    transform: scale(1.25); 
+}
 
 
 @keyframes pulse {
