@@ -244,3 +244,9 @@ footer nav a {
 .bottom-content-about {
     padding: 20px 0 30px 20px;
 }
+
+/* ANIMATION */
+
+.grow { transition: all .2s ease-in-out; }
+
+.grow:hover { transform: scale(1.1); }
